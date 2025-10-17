@@ -45,8 +45,9 @@ def topological_skeleton(X, T1, T2):
         X = thinning(X, elements)
     return B
 
-skeleton = topological_skeleton(image, element, element2)
+# skeleton = topological_skeleton(image, element, element2)
+I = hitormiss(image, element)
 
-plt.imshow(skeleton)
+plt.imshow(I)
 plt.show()
 
